@@ -1,0 +1,7 @@
+
+<h4>List of Employees</h4>
+<ul class="employees">
+  <li *ngFor="let employee of employees | async; let i=index">
+    <span >{{i+1}}.</span> {{employee._empName}}
+  </li>
+</ul>
